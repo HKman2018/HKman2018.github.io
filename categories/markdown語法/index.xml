@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Markdown語法 on Kin &#39;s blog</title>
+    <link>https://hkman2018.github.io/categories/markdown%E8%AA%9E%E6%B3%95/</link>
+    <description>Recent content in Markdown語法 on Kin &#39;s blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-TW</language>
+    <lastBuildDate>Fri, 19 Feb 2021 15:07:47 +0800</lastBuildDate><atom:link href="https://hkman2018.github.io/categories/markdown%E8%AA%9E%E6%B3%95/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Markdown 語法</title>
+      <link>https://hkman2018.github.io/blog/markdown/</link>
+      <pubDate>Fri, 19 Feb 2021 15:07:47 +0800</pubDate>
+      
+      <guid>https://hkman2018.github.io/blog/markdown/</guid>
+      <description>標題大小  H1 # H2 ## H3 ### H4 #### H5 ##### H6 ######   粗體字及斜體 斜體再文字前後加一個星星</description>
+    </item>
+    
+  </channel>
+</rss>
