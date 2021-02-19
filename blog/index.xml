@@ -6,7 +6,16 @@
     <description>Recent content in Blogs on Kin &#39;s blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-TW</language>
-    <lastBuildDate>Fri, 19 Feb 2021 15:07:47 +0800</lastBuildDate><atom:link href="https://hkman2018.github.io/blog/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 19 Feb 2021 19:07:47 +0800</lastBuildDate><atom:link href="https://hkman2018.github.io/blog/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Git 語法</title>
+      <link>https://hkman2018.github.io/blog/git/</link>
+      <pubDate>Fri, 19 Feb 2021 19:07:47 +0800</pubDate>
+      
+      <guid>https://hkman2018.github.io/blog/git/</guid>
+      <description>GIT 語法 本地端  在本地端資料夾新增數據庫   git init  從遠端數據庫複製 git clone[url]   git clone https://github.</description>
+    </item>
+    
     <item>
       <title>Markdown 語法</title>
       <link>https://hkman2018.github.io/blog/markdown/</link>
