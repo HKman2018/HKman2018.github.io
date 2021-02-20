@@ -25,15 +25,5 @@
       <description>標題大小  H1 # H2 ## H3 ### H4 #### H5 ##### H6 ######   粗體字及斜體 斜體再文字前後加一個星星</description>
     </item>
     
-    <item>
-      <title>第一篇文章</title>
-      <link>https://hkman2018.github.io/blog/post-1/</link>
-      <pubDate>Fri, 19 Feb 2021 15:07:47 +0800</pubDate>
-      
-      <guid>https://hkman2018.github.io/blog/post-1/</guid>
-      <description>Emphasis Emphasis, aka italics, with asterisks or underscores.
-Strong emphasis, aka bold, with asterisks or underscores.</description>
-    </item>
-    
   </channel>
 </rss>
