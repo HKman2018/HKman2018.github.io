@@ -5,7 +5,7 @@
 
   <!-- mobile responsive meta -->
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="Git 語法介紹">
+  <meta name="description" content="Markdown語法介紹">
   <meta name="author" content="kin">
   <meta name="generator" content="Hugo 0.79.1" />
 
@@ -121,10 +121,10 @@
     <div class="row">
       <div class="col-lg-8 mx-auto">
         
-        <a href="/categories/git-%e8%aa%9e%e6%b3%95"
-          class="text-primary">Git 語法</a>
+        <a href="/categories/markdown%e8%aa%9e%e6%b3%95"
+          class="text-primary">Markdown語法</a>
         
-        <h2>Git 語法</h2>
+        <h2>tecky cademy notes</h2>
         <div class="mb-3 post-meta">
           <span>By kin</span>
           
@@ -133,119 +133,34 @@
           
         </div>
         
-        <img src="https://hkman2018.github.io/images/post/git.png" class="img-fluid w-100 mb-4" alt="Git 語法">
+        <img src="https://hkman2018.github.io/images/post/markdown.png" class="img-fluid w-100 mb-4" alt="tecky cademy notes">
         
         <div class="content mb-5">
-          <h1 id="git-語法">GIT 語法</h1>
-<h3 id="本地端">本地端</h3>
-<ul>
-<li><strong>在本地端資料夾新增數據庫</strong></li>
-</ul>
-<pre><code>          git init
-</code></pre><ul>
-<li><strong>從遠端數據庫複製 <code>git clone[url]</code></strong></li>
-</ul>
-<pre><code>          git clone https://github.com/username/Personal-website.git
-</code></pre><ul>
-<li><strong>查詢設定列表</strong></li>
-</ul>
-<pre><code>          git config --list
-</code></pre><ul>
-<li><strong>加檔案進入commit</strong></li>
-</ul>
-<pre><code>          git add *filename*
-</code></pre><ul>
-<li><strong>加全部檔案進入commit</strong></li>
-</ul>
-<pre><code>          git add .
-</code></pre><ul>
-<li><strong>查詢commit內file</strong></li>
-</ul>
-<pre><code>          git status
-</code></pre><ul>
-<li><strong>顯示之前紀錄</strong></li>
-</ul>
-<pre><code>          git log
-</code></pre><ul>
-<li><strong>記錄commit</strong></li>
-</ul>
-<pre><code>          git commit -m '訊息'
-</code></pre><h3 id="還原指令">還原指令</h3>
-<ul>
-<li><strong>還原工作目錄與索引，會跟最後一次 commit 保持一樣</strong></li>
-</ul>
-<pre><code>          git reset --hard 
-</code></pre><ul>
-<li><strong>全部檔案取消索引</strong></li>
-</ul>
-<pre><code>          git reset HEAD 
-</code></pre><ul>
-<li><strong>單一檔案取消索引</strong></li>
-</ul>
-<pre><code>          git reset HEAD *filename*
-</code></pre><ul>
-<li><strong>恢復單一檔案到最新 commit 狀態</strong></li>
-</ul>
-<pre><code>          git checkout *filename*
-</code></pre><ul>
-<li><strong>刪除最近一次 commit</strong></li>
-</ul>
-<pre><code>          git reset --hard HEAD^ 
-</code></pre><ul>
-<li><strong>上面語法如果刪除錯了可以再用此語法還原</strong></li>
-</ul>
-<pre><code>          git reset --hard ORIG_HEAD  
-</code></pre><ul>
-<li><strong>刪除最近一次 commit，但保留異動內容</strong></li>
-</ul>
-<pre><code>          git reset --soft HEAD^
-</code></pre><ul>
-<li><strong>commit 後發現有幾個檔案忘了加入進去，想要補內容進去時</strong></li>
-</ul>
-<pre><code>          git commit --amend 
-</code></pre><h3 id="分支">分支</h3>
-<ul>
-<li><strong>顯示所有本地分支</strong></li>
-</ul>
-<pre><code>          git branch 
-</code></pre><ul>
-<li><strong>新增分支</strong></li>
-</ul>
-<pre><code>          git branch 分支名稱
-</code></pre><ul>
-<li><strong>切換分支</strong></li>
-</ul>
-<pre><code>          git checkout 分支名稱
-</code></pre><ul>
-<li><strong>合併指定分支到目前的分支</strong></li>
-</ul>
-<pre><code>          git merge 分支名稱
-</code></pre><ul>
-<li><strong>刪除分支</strong></li>
-</ul>
-<pre><code>          git branch -d 分支名稱
-</code></pre><h3 id="遠端數據庫指令">遠端數據庫指令</h3>
-<ul>
-<li><strong>查詢遠端數據庫</strong></li>
-</ul>
-<pre><code>          git remote
-</code></pre><ul>
-<li><strong>將本地分支推送到遠端分支</strong></li>
-</ul>
-<pre><code>          git push 遠端數據庫名稱 遠端分支名稱
-</code></pre><ul>
-<li><strong>將遠端分支拉下來與本地分支進行合併</strong></li>
-</ul>
-<pre><code>          git pull
-</code></pre><ul>
-<li><strong>查詢遠端分支url</strong></li>
-</ul>
-<pre><code>          git remote -v
-</code></pre><ul>
-<li><strong>更改遠端分支url</strong></li>
-</ul>
-<pre><code>          git remote set-url origin https://github.com/username.git
-</code></pre>
+          <p>#tecky cademy</p>
+<h2 id="add-ssh-key">Add SSH key</h2>
+<blockquote>
+<p>ssh-keygen
+cat .ssh/id_rsa.pub</p>
+</blockquote>
+<p><strong>取得ssh key 加入gitlab</strong></p>
+<h2 id="function">function</h2>
+<blockquote>
+<p>function(可有參數或無參數){
+return 值
+}
+<!-- raw HTML omitted -->
+function addSum(){
+let sum = 0 <!-- raw HTML omitted -->//當執行return function時也給於 sum return 的數值,再執行時sum的值是上次return的值<!-- raw HTML omitted -->
+return (num)=&gt;{
+sum = sum +num
+return sum
+}
+}
+const add = addSum()// closure 的addSum現時值為0
+console.log(add(3))//值 3
+console.log(add(3))//值 6 </p>
+</blockquote>
+
         </div>
 
         
