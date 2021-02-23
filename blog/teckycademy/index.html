@@ -144,25 +144,52 @@ cat .ssh/id_rsa.pub</p>
 </blockquote>
 <p><strong>取得ssh key 加入gitlab</strong></p>
 <h2 id="function">function</h2>
-<blockquote>
-<p>function(可有參數或無參數){
-return 值
-}</p>
-</blockquote>
-<blockquote>
-<p>function addSum(){
-let sum = 0
-//當執行return function時也給於 sum return 的數值,再執行時sum的值是上次return的值<!-- raw HTML omitted -->
-return (num)=&gt;{
-sum = sum +num
-return sum
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-javascript" data-lang="javascript"><span style="color:#66d9ef">function</span>(<span style="color:#a6e22e">可有參數或無參數</span>){
+  <span style="color:#66d9ef">return</span> <span style="color:#a6e22e">值</span>
 }
+</code></pre></div><div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-javascript" data-lang="javascript"><span style="color:#66d9ef">function</span> <span style="color:#a6e22e">addSum</span>(){
+  <span style="color:#66d9ef">let</span> <span style="color:#a6e22e">sum</span> <span style="color:#f92672">=</span> <span style="color:#ae81ff">0</span> 
+  <span style="color:#75715e">//當執行return function時也給於 sum return 的數值,
+</span><span style="color:#75715e"></span>  <span style="color:#75715e">//再執行時sum的值是上次return的值&lt;br&gt;
+</span><span style="color:#75715e"></span>  <span style="color:#66d9ef">return</span> (<span style="color:#a6e22e">num</span>)=&gt;{ 
+    <span style="color:#a6e22e">sum</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">sum</span> <span style="color:#f92672">+</span><span style="color:#a6e22e">num</span>
+    <span style="color:#66d9ef">return</span> <span style="color:#a6e22e">sum</span>
+  }
 }
-const add = addSum()// closure 的addSum現時值為0
-console.log(add(3))//值 3
-console.log(add(3))//值 6 </p>
-</blockquote>
-
+<span style="color:#66d9ef">const</span> <span style="color:#a6e22e">add</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">addSum</span>()<span style="color:#75715e">// closure 的addSum現時值為0
+</span><span style="color:#75715e"></span><span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#a6e22e">add</span>(<span style="color:#ae81ff">3</span>))<span style="color:#75715e">//值 3
+</span><span style="color:#75715e"></span><span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#a6e22e">add</span>(<span style="color:#ae81ff">3</span>))<span style="color:#75715e">//值 6 
+</span></code></pre></div><h2 id="instanceof-object-or-array">instanceof Object or Array</h2>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-javascript" data-lang="javascript"><span style="color:#66d9ef">function</span> <span style="color:#a6e22e">print</span>() {
+    <span style="color:#66d9ef">let</span> <span style="color:#66d9ef">final</span> <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;&#34;</span>;
+    <span style="color:#66d9ef">for</span> (<span style="color:#66d9ef">let</span> <span style="color:#a6e22e">key</span> <span style="color:#66d9ef">in</span> <span style="color:#a6e22e">hk</span>) {
+        <span style="color:#66d9ef">let</span> <span style="color:#a6e22e">value</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">hk</span>[<span style="color:#a6e22e">key</span>]
+        <span style="color:#66d9ef">final</span> <span style="color:#f92672">+=</span> <span style="color:#a6e22e">key</span> <span style="color:#f92672">+</span> <span style="color:#e6db74">&#34;: &#34;</span>;
+        <span style="color:#66d9ef">if</span> (<span style="color:#a6e22e">value</span> <span style="color:#66d9ef">instanceof</span> Array) {
+            <span style="color:#66d9ef">for</span> (<span style="color:#66d9ef">let</span> <span style="color:#a6e22e">item</span> <span style="color:#66d9ef">of</span> <span style="color:#a6e22e">value</span>) {
+                <span style="color:#66d9ef">if</span> (<span style="color:#a6e22e">item</span> <span style="color:#66d9ef">instanceof</span> Object) {
+                    <span style="color:#66d9ef">final</span> <span style="color:#f92672">=</span> <span style="color:#66d9ef">final</span> <span style="color:#f92672">+</span> <span style="color:#e6db74">&#34;\n&#34;</span>;
+                    <span style="color:#66d9ef">for</span> (<span style="color:#66d9ef">let</span> <span style="color:#a6e22e">key2</span> <span style="color:#66d9ef">in</span> <span style="color:#a6e22e">item</span>) {
+                        <span style="color:#66d9ef">let</span> <span style="color:#a6e22e">value2</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">item</span>[<span style="color:#a6e22e">key2</span>];
+                        <span style="color:#66d9ef">final</span> <span style="color:#f92672">=</span> <span style="color:#66d9ef">final</span> <span style="color:#f92672">+</span> <span style="color:#a6e22e">key</span> <span style="color:#f92672">+</span> <span style="color:#e6db74">&#34;_&#34;</span> <span style="color:#f92672">+</span> <span style="color:#a6e22e">key2</span> <span style="color:#f92672">+</span> <span style="color:#e6db74">&#34;: &#34;</span> <span style="color:#f92672">+</span> <span style="color:#a6e22e">value2</span> <span style="color:#f92672">+</span> <span style="color:#e6db74">&#34;\n&#34;</span>
+                    }
+                } <span style="color:#66d9ef">else</span>
+                    <span style="color:#66d9ef">final</span> <span style="color:#f92672">+=</span> <span style="color:#a6e22e">item</span> <span style="color:#f92672">+</span> <span style="color:#e6db74">&#34; 你好&#34;</span>;
+            }
+        } <span style="color:#66d9ef">else</span> <span style="color:#66d9ef">if</span> (<span style="color:#a6e22e">value</span> <span style="color:#66d9ef">instanceof</span> Object) {
+            <span style="color:#66d9ef">final</span> <span style="color:#f92672">=</span> <span style="color:#66d9ef">final</span> <span style="color:#f92672">+</span> <span style="color:#e6db74">&#34;\n&#34;</span>;
+            <span style="color:#66d9ef">for</span> (<span style="color:#66d9ef">let</span> <span style="color:#a6e22e">key2</span> <span style="color:#66d9ef">in</span> <span style="color:#a6e22e">value</span>) {
+                <span style="color:#66d9ef">let</span> <span style="color:#a6e22e">value2</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">value</span>[<span style="color:#a6e22e">key2</span>];
+                <span style="color:#66d9ef">final</span> <span style="color:#f92672">=</span> <span style="color:#66d9ef">final</span> <span style="color:#f92672">+</span> <span style="color:#a6e22e">key</span> <span style="color:#f92672">+</span> <span style="color:#e6db74">&#34;_&#34;</span> <span style="color:#f92672">+</span> <span style="color:#a6e22e">key2</span> <span style="color:#f92672">+</span> <span style="color:#e6db74">&#34;: &#34;</span> <span style="color:#f92672">+</span> <span style="color:#a6e22e">value2</span> <span style="color:#f92672">+</span> <span style="color:#e6db74">&#34;\n&#34;</span>
+            }
+        } <span style="color:#66d9ef">else</span>
+            <span style="color:#66d9ef">final</span> <span style="color:#f92672">+=</span> <span style="color:#a6e22e">value</span>
+        <span style="color:#66d9ef">final</span> <span style="color:#f92672">+=</span> <span style="color:#e6db74">&#34;\n&#34;</span>;
+    }
+    <span style="color:#66d9ef">return</span> <span style="color:#66d9ef">final</span>;
+}
+<span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#a6e22e">print</span>())
+</code></pre></div>
         </div>
 
         
