@@ -6,7 +6,16 @@
     <description>Recent content in Categories on Kin &#39;s blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-TW</language>
-    <lastBuildDate>Fri, 19 Feb 2021 19:07:47 +0800</lastBuildDate><atom:link href="https://hkman2018.github.io/categories/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 26 Feb 2021 15:07:47 +0800</lastBuildDate><atom:link href="https://hkman2018.github.io/categories/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>tic tac toe</title>
+      <link>https://hkman2018.github.io/categories/tic-tac-toe/</link>
+      <pubDate>Fri, 26 Feb 2021 15:07:47 +0800</pubDate>
+      
+      <guid>https://hkman2018.github.io/categories/tic-tac-toe/</guid>
+      <description></description>
+    </item>
+    
     <item>
       <title>Git 語法</title>
       <link>https://hkman2018.github.io/categories/git-%E8%AA%9E%E6%B3%95/</link>

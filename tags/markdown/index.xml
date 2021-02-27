@@ -17,16 +17,6 @@
     </item>
     
     <item>
-      <title>CSS</title>
-      <link>https://hkman2018.github.io/blog/tictactoe/</link>
-      <pubDate>Fri, 19 Feb 2021 15:07:47 +0800</pubDate>
-      
-      <guid>https://hkman2018.github.io/blog/tictactoe/</guid>
-      <description>#Tic Tac Toe 思路
-如何code tic tac toe game 首先要如何取得O同X的value:  我們在html寫一個div,裡面class為box 之後box裡面有9個細box,給於value ==&amp;gt;data-col=&amp;quot;&amp;quot; ``` &amp;lt;div class=&amp;quot; box&amp;quot;&amp;gt; &amp;lt;div data-col=&amp;quot;0&amp;quot;&amp;gt;&amp;lt;/div&amp;gt; &amp;lt;div data-col=&amp;quot;1&amp;quot;&amp;gt;&amp;lt;/div&amp;gt; &amp;lt;div data-col=&amp;quot;2&amp;quot;&amp;gt;&amp;lt;/div&amp;gt; &amp;lt;div data-col=&amp;quot;3&amp;quot;&amp;gt;&amp;lt;/div&amp;gt; &amp;lt;div data-col=&amp;quot;4&amp;quot;&amp;gt;&amp;lt;/div&amp;gt; &amp;lt;div data-col=&amp;quot;5&amp;quot;&amp;gt;&amp;lt;/div&amp;gt; &amp;lt;div data-col=&amp;quot;6&amp;quot;&amp;gt;&amp;lt;/div&amp;gt; &amp;lt;div data-col=&amp;quot;7&amp;quot;&amp;gt;&amp;lt;/div&amp;gt; &amp;lt;div data-col=&amp;quot;8&amp;quot;&amp;gt;&amp;lt;/div&amp;gt; &amp;lt;/div&amp;gt; ``` 之後在js裡面,用querySelectorAll取得細box的位置, ``` for (let grid of grids) { grid.</description>
-    </item>
-    
-    <item>
       <title>Markdown 語法</title>
       <link>https://hkman2018.github.io/blog/markdown/</link>
       <pubDate>Fri, 19 Feb 2021 15:07:47 +0800</pubDate>
