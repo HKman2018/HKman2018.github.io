@@ -8,11 +8,11 @@
     <language>zh-TW</language>
     <lastBuildDate>Fri, 26 Feb 2021 15:07:47 +0800</lastBuildDate><atom:link href="https://hkman2018.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>tic tac toe</title>
-      <link>https://hkman2018.github.io/tags/tic-tac-toe/</link>
+      <title>TicTacToe</title>
+      <link>https://hkman2018.github.io/tags/tictactoe/</link>
       <pubDate>Fri, 26 Feb 2021 15:07:47 +0800</pubDate>
       
-      <guid>https://hkman2018.github.io/tags/tic-tac-toe/</guid>
+      <guid>https://hkman2018.github.io/tags/tictactoe/</guid>
       <description></description>
     </item>
     
@@ -26,11 +26,29 @@
     </item>
     
     <item>
+      <title>CSS</title>
+      <link>https://hkman2018.github.io/tags/css/</link>
+      <pubDate>Fri, 19 Feb 2021 15:07:47 +0800</pubDate>
+      
+      <guid>https://hkman2018.github.io/tags/css/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>Markdown</title>
       <link>https://hkman2018.github.io/tags/markdown/</link>
       <pubDate>Fri, 19 Feb 2021 15:07:47 +0800</pubDate>
       
       <guid>https://hkman2018.github.io/tags/markdown/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Tecky</title>
+      <link>https://hkman2018.github.io/tags/tecky/</link>
+      <pubDate>Fri, 19 Feb 2021 15:07:47 +0800</pubDate>
+      
+      <guid>https://hkman2018.github.io/tags/tecky/</guid>
       <description></description>
     </item>
     

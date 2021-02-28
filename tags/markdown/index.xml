@@ -8,31 +8,12 @@
     <language>zh-TW</language>
     <lastBuildDate>Fri, 19 Feb 2021 15:07:47 +0800</lastBuildDate><atom:link href="https://hkman2018.github.io/tags/markdown/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>CSS</title>
-      <link>https://hkman2018.github.io/blog/css/</link>
-      <pubDate>Fri, 19 Feb 2021 15:07:47 +0800</pubDate>
-      
-      <guid>https://hkman2018.github.io/blog/css/</guid>
-      <description>box-sizing  &amp;lt;div class=&amp;quot;container&amp;quot;&amp;gt; &amp;lt;div class=&amp;quot;box&amp;quot;&amp;gt;&amp;lt;/div&amp;gt; &amp;lt;/div&amp;gt; &amp;lt;style&amp;gt; .container{ box-sizing:content-box; width:100%; } &amp;lt;/style&amp;gt;  &amp;lt;div class=&amp;quot;container&amp;quot;&amp;gt; &amp;lt;div class=&amp;quot;box&amp;quot;&amp;gt;&amp;lt;/div&amp;gt; &amp;lt;/div&amp;gt; &amp;lt;style&amp;gt; .</description>
-    </item>
-    
-    <item>
       <title>Markdown 語法</title>
       <link>https://hkman2018.github.io/blog/markdown/</link>
       <pubDate>Fri, 19 Feb 2021 15:07:47 +0800</pubDate>
       
       <guid>https://hkman2018.github.io/blog/markdown/</guid>
       <description>標題大小  H1 # H2 ## H3 ### H4 #### H5 ##### H6 ######   粗體字及斜體 斜體再文字前後加一個星星</description>
-    </item>
-    
-    <item>
-      <title>tecky cademy notes</title>
-      <link>https://hkman2018.github.io/blog/teckycademy/</link>
-      <pubDate>Fri, 19 Feb 2021 15:07:47 +0800</pubDate>
-      
-      <guid>https://hkman2018.github.io/blog/teckycademy/</guid>
-      <description>#tecky cademy
-Add SSH key  ssh-keygen cat .ssh/id_rsa.pub 取得ssh key 加入gitlab</description>
     </item>
     
   </channel>

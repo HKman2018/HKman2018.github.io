@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Tecky on Kin &#39;s blog</title>
+    <link>https://hkman2018.github.io/categories/tecky/</link>
+    <description>Recent content in Tecky on Kin &#39;s blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-TW</language>
+    <lastBuildDate>Fri, 19 Feb 2021 15:07:47 +0800</lastBuildDate><atom:link href="https://hkman2018.github.io/categories/tecky/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>tecky cademy notes</title>
+      <link>https://hkman2018.github.io/blog/teckycademy/</link>
+      <pubDate>Fri, 19 Feb 2021 15:07:47 +0800</pubDate>
+      
+      <guid>https://hkman2018.github.io/blog/teckycademy/</guid>
+      <description>#tecky cademy
+Add SSH key  ssh-keygen cat .ssh/id_rsa.pub 取得ssh key 加入gitlab</description>
+    </item>
+    
+  </channel>
+</rss>

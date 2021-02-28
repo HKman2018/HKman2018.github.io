@@ -8,11 +8,11 @@
     <language>zh-TW</language>
     <lastBuildDate>Fri, 26 Feb 2021 15:07:47 +0800</lastBuildDate><atom:link href="https://hkman2018.github.io/categories/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>tic tac toe</title>
-      <link>https://hkman2018.github.io/categories/tic-tac-toe/</link>
+      <title>TicTacToe</title>
+      <link>https://hkman2018.github.io/categories/tictactoe/</link>
       <pubDate>Fri, 26 Feb 2021 15:07:47 +0800</pubDate>
       
-      <guid>https://hkman2018.github.io/categories/tic-tac-toe/</guid>
+      <guid>https://hkman2018.github.io/categories/tictactoe/</guid>
       <description></description>
     </item>
     
@@ -26,11 +26,29 @@
     </item>
     
     <item>
+      <title>CSS</title>
+      <link>https://hkman2018.github.io/categories/css/</link>
+      <pubDate>Fri, 19 Feb 2021 15:07:47 +0800</pubDate>
+      
+      <guid>https://hkman2018.github.io/categories/css/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>Markdown語法</title>
       <link>https://hkman2018.github.io/categories/markdown%E8%AA%9E%E6%B3%95/</link>
       <pubDate>Fri, 19 Feb 2021 15:07:47 +0800</pubDate>
       
       <guid>https://hkman2018.github.io/categories/markdown%E8%AA%9E%E6%B3%95/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Tecky</title>
+      <link>https://hkman2018.github.io/categories/tecky/</link>
+      <pubDate>Fri, 19 Feb 2021 15:07:47 +0800</pubDate>
+      
+      <guid>https://hkman2018.github.io/categories/tecky/</guid>
       <description></description>
     </item>
     
