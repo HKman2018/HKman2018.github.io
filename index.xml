@@ -32,7 +32,7 @@
       <pubDate>Fri, 19 Feb 2021 15:07:47 +0800</pubDate>
       
       <guid>https://hkman2018.github.io/blog/css/</guid>
-      <description>box-sizing  &amp;lt;div class=&amp;quot;container&amp;quot;&amp;gt; &amp;lt;div class=&amp;quot;box&amp;quot;&amp;gt;&amp;lt;/div&amp;gt; &amp;lt;/div&amp;gt; @font-face { font-family: myFirstFont; src: url(sansation_light.</description>
+      <description>box-sizing  &amp;lt;div class=&amp;quot;container&amp;quot;&amp;gt; &amp;lt;div class=&amp;quot;box&amp;quot;&amp;gt;&amp;lt;/div&amp;gt; &amp;lt;/div&amp;gt; &amp;lt;style&amp;gt; .container{ box-sizing:content-box; width:100%; } &amp;lt;/style&amp;gt;  &amp;lt;div class=&amp;quot;container&amp;quot;&amp;gt; &amp;lt;div class=&amp;quot;box&amp;quot;&amp;gt;&amp;lt;/div&amp;gt; &amp;lt;/div&amp;gt; &amp;lt;style&amp;gt; .</description>
     </item>
     
     <item>
