@@ -145,10 +145,10 @@
 </span></code></pre></div><ul>
 <li>import socket.io</li>
 </ul>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-typescript" data-lang="typescript">   <span style="color:#66d9ef">import</span> <span style="color:#a6e22e">express</span> <span style="color:#66d9ef">from</span> <span style="color:#e6db74">&#39;express&#39;</span>;
-   <span style="color:#66d9ef">import</span> <span style="color:#a6e22e">expressSession</span> <span style="color:#66d9ef">from</span> <span style="color:#e6db74">&#39;express-session&#39;</span>;
-   <span style="color:#66d9ef">import</span> <span style="color:#a6e22e">http</span> <span style="color:#66d9ef">from</span> <span style="color:#e6db74">&#39;http&#39;</span>;
-   <span style="color:#66d9ef">import</span> {<span style="color:#a6e22e">Server</span> <span style="color:#66d9ef">as</span> <span style="color:#a6e22e">SocketIO</span>} <span style="color:#66d9ef">from</span> <span style="color:#e6db74">&#39;socket.io&#39;</span>;
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-javascript" data-lang="javascript">   <span style="color:#66d9ef">import</span> <span style="color:#a6e22e">express</span> <span style="color:#a6e22e">from</span> <span style="color:#e6db74">&#39;express&#39;</span>;
+   <span style="color:#66d9ef">import</span> <span style="color:#a6e22e">expressSession</span> <span style="color:#a6e22e">from</span> <span style="color:#e6db74">&#39;express-session&#39;</span>;
+   <span style="color:#66d9ef">import</span> <span style="color:#a6e22e">http</span> <span style="color:#a6e22e">from</span> <span style="color:#e6db74">&#39;http&#39;</span>;
+   <span style="color:#66d9ef">import</span> {<span style="color:#a6e22e">Server</span> <span style="color:#a6e22e">as</span> <span style="color:#a6e22e">SocketIO</span>} <span style="color:#a6e22e">from</span> <span style="color:#e6db74">&#39;socket.io&#39;</span>;
     
    <span style="color:#66d9ef">const</span> <span style="color:#a6e22e">app</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">express</span>();
    <span style="color:#66d9ef">const</span> <span style="color:#a6e22e">server</span> <span style="color:#f92672">=</span> <span style="color:#66d9ef">new</span> <span style="color:#a6e22e">http</span>.<span style="color:#a6e22e">Server</span>(<span style="color:#a6e22e">app</span>);
@@ -156,27 +156,27 @@
    
    <span style="color:#66d9ef">const</span> <span style="color:#a6e22e">sessionMiddleware</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">expressSession</span>({
      <span style="color:#a6e22e">secret</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#39;hongkonger is good&#39;</span>,
-     <span style="color:#a6e22e">resave</span>:<span style="color:#66d9ef">true</span>,
-     <span style="color:#a6e22e">saveUninitialized</span>:<span style="color:#66d9ef">true</span>
+     <span style="color:#a6e22e">resave</span><span style="color:#f92672">:</span><span style="color:#66d9ef">true</span>,
+     <span style="color:#a6e22e">saveUninitialized</span><span style="color:#f92672">:</span><span style="color:#66d9ef">true</span>
    });
    <span style="color:#66d9ef">const</span> <span style="color:#a6e22e">Middleware</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">expressSession</span>({
      <span style="color:#a6e22e">secret</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#39;Memo wall is fun&#39;</span>,
-     <span style="color:#a6e22e">resave</span>:<span style="color:#66d9ef">true</span>,
-     <span style="color:#a6e22e">saveUninitialized</span>:<span style="color:#66d9ef">true</span>
+     <span style="color:#a6e22e">resave</span><span style="color:#f92672">:</span><span style="color:#66d9ef">true</span>,
+     <span style="color:#a6e22e">saveUninitialized</span><span style="color:#f92672">:</span><span style="color:#66d9ef">true</span>
    });
   
    <span style="color:#a6e22e">app</span>.<span style="color:#a6e22e">use</span>(<span style="color:#a6e22e">Middleware</span>);
 
-   <span style="color:#a6e22e">io</span>.<span style="color:#a6e22e">use</span>((<span style="color:#a6e22e">socket</span>,<span style="color:#a6e22e">next</span>)<span style="color:#f92672">=&gt;</span>{
-     <span style="color:#66d9ef">const</span>  <span style="color:#a6e22e">request</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">socket</span>.<span style="color:#a6e22e">request</span> <span style="color:#66d9ef">as</span> <span style="color:#a6e22e">express</span>.<span style="color:#a6e22e">Request</span>;
-     <span style="color:#a6e22e">Middleware</span>(<span style="color:#a6e22e">request</span>,<span style="color:#a6e22e">request</span>.<span style="color:#a6e22e">res</span> <span style="color:#66d9ef">as</span> <span style="color:#a6e22e">express</span>.<span style="color:#a6e22e">Response</span>,<span style="color:#a6e22e">next</span> <span style="color:#66d9ef">as</span> <span style="color:#a6e22e">express</span>.<span style="color:#a6e22e">NextFunction</span>);
+   <span style="color:#a6e22e">io</span>.<span style="color:#a6e22e">use</span>((<span style="color:#a6e22e">socket</span>,<span style="color:#a6e22e">next</span>)=&gt;{
+     <span style="color:#66d9ef">const</span>  <span style="color:#a6e22e">request</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">socket</span>.<span style="color:#a6e22e">request</span> <span style="color:#a6e22e">as</span> <span style="color:#a6e22e">express</span>.<span style="color:#a6e22e">Request</span>;
+     <span style="color:#a6e22e">Middleware</span>(<span style="color:#a6e22e">request</span>,<span style="color:#a6e22e">request</span>.<span style="color:#a6e22e">res</span> <span style="color:#a6e22e">as</span> <span style="color:#a6e22e">express</span>.<span style="color:#a6e22e">Response</span>,<span style="color:#a6e22e">next</span> <span style="color:#a6e22e">as</span> <span style="color:#a6e22e">express</span>.<span style="color:#a6e22e">NextFunction</span>);
    })
 
    <span style="color:#a6e22e">io</span>.<span style="color:#a6e22e">on</span>(<span style="color:#e6db74">&#39;connection&#39;</span>, <span style="color:#66d9ef">function</span> (<span style="color:#a6e22e">socket</span>) {
     
 
     <span style="color:#75715e">//每次socket connect 執行一次
-</span><span style="color:#75715e"></span>     <span style="color:#66d9ef">const</span> <span style="color:#a6e22e">user</span>:<span style="color:#66d9ef">User</span> <span style="color:#f92672">|</span> <span style="color:#66d9ef">undefined</span> <span style="color:#f92672">=</span> (<span style="color:#a6e22e">socket</span>.<span style="color:#a6e22e">request</span> <span style="color:#66d9ef">as</span> <span style="color:#a6e22e">express</span>.<span style="color:#a6e22e">Request</span>).<span style="color:#a6e22e">session</span>[<span style="color:#e6db74">&#39;user&#39;</span>];
+</span><span style="color:#75715e"></span>     <span style="color:#66d9ef">const</span> <span style="color:#a6e22e">user</span><span style="color:#f92672">:</span><span style="color:#a6e22e">User</span> <span style="color:#f92672">|</span> <span style="color:#66d9ef">undefined</span> <span style="color:#f92672">=</span> (<span style="color:#a6e22e">socket</span>.<span style="color:#a6e22e">request</span> <span style="color:#a6e22e">as</span> <span style="color:#a6e22e">express</span>.<span style="color:#a6e22e">Request</span>).<span style="color:#a6e22e">session</span>[<span style="color:#e6db74">&#39;user&#39;</span>];
      <span style="color:#66d9ef">if</span>(<span style="color:#a6e22e">user</span>){
         <span style="color:#a6e22e">socket</span>.<span style="color:#a6e22e">join</span>(<span style="color:#e6db74">`user-</span><span style="color:#e6db74">${</span><span style="color:#a6e22e">user</span>.<span style="color:#a6e22e">username</span><span style="color:#e6db74">}</span><span style="color:#e6db74">`</span>);  
      }
@@ -184,8 +184,8 @@
    });
 
 </code></pre></div><p> </p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-html" data-lang="html"> in html
-  &lt;<span style="color:#f92672">script</span> <span style="color:#a6e22e">src</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;/socket.io/socket.io.js&#34;</span>&gt;&lt;/<span style="color:#f92672">script</span>&gt;
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-javascript" data-lang="javascript"> <span style="color:#66d9ef">in</span> <span style="color:#a6e22e">html</span>
+  <span style="color:#f92672">&lt;</span><span style="color:#a6e22e">script</span> <span style="color:#a6e22e">src</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;/socket.io/socket.io.js&#34;</span><span style="color:#f92672">&gt;&lt;</span><span style="color:#960050;background-color:#1e0010">/script&gt;</span>
 </code></pre></div><div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-javascript" data-lang="javascript">
      <span style="color:#75715e">// 連接咗嘅Socket.IO socket
 </span><span style="color:#75715e"></span>     <span style="color:#66d9ef">const</span> <span style="color:#a6e22e">socket</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">io</span>.<span style="color:#a6e22e">connect</span>();
