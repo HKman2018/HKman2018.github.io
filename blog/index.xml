@@ -27,6 +27,24 @@
     </item>
     
     <item>
+      <title>Promise</title>
+      <link>https://hkman2018.github.io/blog/promise/</link>
+      <pubDate>Fri, 19 Feb 2021 19:07:47 +0800</pubDate>
+      
+      <guid>https://hkman2018.github.io/blog/promise/</guid>
+      <description>callback &amp;amp; promise ,async/ await function greeting(name) { alert(&amp;#39;Hello &amp;#39; + name); } function processUserInput(callback) { var name = prompt(&amp;#39;Please enter your name.</description>
+    </item>
+    
+    <item>
+      <title> notes</title>
+      <link>https://hkman2018.github.io/blog/teckycademy/</link>
+      <pubDate>Fri, 19 Feb 2021 15:07:47 +0800</pubDate>
+      
+      <guid>https://hkman2018.github.io/blog/teckycademy/</guid>
+      <description>Notes  Add SSH key ssh-keygen cat .ssh/id_rsa.pub 取得ssh key 加入gitlab function function(可有參數或無參數){ return 值 } function addSum(){ let sum = 0 //當執行return function時也給於 sum return 的數值,  //再執行時sum的值是上次return的值&amp;lt;br&amp;gt;  return (num)=&amp;gt;{ sum = sum +num return sum } } const add = addSum()// closure 的addSum現時值為0 console.</description>
+    </item>
+    
+    <item>
       <title>CSS</title>
       <link>https://hkman2018.github.io/blog/css/</link>
       <pubDate>Fri, 19 Feb 2021 15:07:47 +0800</pubDate>
@@ -45,13 +63,21 @@
     </item>
     
     <item>
-      <title>tecky cademy notes</title>
-      <link>https://hkman2018.github.io/blog/teckycademy/</link>
+      <title>socket io</title>
+      <link>https://hkman2018.github.io/blog/socketio/</link>
       <pubDate>Fri, 19 Feb 2021 15:07:47 +0800</pubDate>
       
-      <guid>https://hkman2018.github.io/blog/teckycademy/</guid>
-      <description>#tecky cademy
-Add SSH key  ssh-keygen cat .ssh/id_rsa.pub 取得ssh key 加入gitlab</description>
+      <guid>https://hkman2018.github.io/blog/socketio/</guid>
+      <description>socket.io   安裝socket  npm install socket.io //如typescript加埋 @types/socket.io  import socket.</description>
+    </item>
+    
+    <item>
+      <title>SQL</title>
+      <link>https://hkman2018.github.io/blog/sql/</link>
+      <pubDate>Fri, 19 Feb 2021 15:07:47 +0800</pubDate>
+      
+      <guid>https://hkman2018.github.io/blog/sql/</guid>
+      <description>SQL 基礎語法  psql -h localhost     權限 內容     SELECT 能使用SELECT命令來取得資料   INSERT 能使用INSERT命令來插入資料   UPDATE 能使用UPDATE命令來插入資料   DELETE 能使用DELETE命令來插入資料   EXECUTE 執行程序   REFERENCES 可以用外來鍵參考資料   ALL 所有權限    ###常用 SQL</description>
     </item>
     
   </channel>

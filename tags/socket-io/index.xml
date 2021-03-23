@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>socket io on Kin &#39;s blog</title>
+    <link>https://hkman2018.github.io/tags/socket-io/</link>
+    <description>Recent content in socket io on Kin &#39;s blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-TW</language>
+    <lastBuildDate>Fri, 19 Feb 2021 15:07:47 +0800</lastBuildDate><atom:link href="https://hkman2018.github.io/tags/socket-io/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>socket io</title>
+      <link>https://hkman2018.github.io/blog/socketio/</link>
+      <pubDate>Fri, 19 Feb 2021 15:07:47 +0800</pubDate>
+      
+      <guid>https://hkman2018.github.io/blog/socketio/</guid>
+      <description>socket.io   安裝socket  npm install socket.io //如typescript加埋 @types/socket.io  import socket.</description>
+    </item>
+    
+  </channel>
+</rss>

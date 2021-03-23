@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>notes on Kin &#39;s blog</title>
+    <link>https://hkman2018.github.io/categories/notes/</link>
+    <description>Recent content in notes on Kin &#39;s blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-TW</language>
+    <lastBuildDate>Fri, 19 Feb 2021 15:07:47 +0800</lastBuildDate><atom:link href="https://hkman2018.github.io/categories/notes/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title> notes</title>
+      <link>https://hkman2018.github.io/blog/teckycademy/</link>
+      <pubDate>Fri, 19 Feb 2021 15:07:47 +0800</pubDate>
+      
+      <guid>https://hkman2018.github.io/blog/teckycademy/</guid>
+      <description>Notes  Add SSH key ssh-keygen cat .ssh/id_rsa.pub 取得ssh key 加入gitlab function function(可有參數或無參數){ return 值 } function addSum(){ let sum = 0 //當執行return function時也給於 sum return 的數值,  //再執行時sum的值是上次return的值&amp;lt;br&amp;gt;  return (num)=&amp;gt;{ sum = sum +num return sum } } const add = addSum()// closure 的addSum現時值為0 console.</description>
+    </item>
+    
+  </channel>
+</rss>

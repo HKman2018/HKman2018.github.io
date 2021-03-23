@@ -53,6 +53,26 @@
   </url>
   
   <url>
+    <loc>https://hkman2018.github.io/tags/promise/</loc>
+    <lastmod>2021-02-19T19:07:47+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://hkman2018.github.io/categories/promise/</loc>
+    <lastmod>2021-02-19T19:07:47+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://hkman2018.github.io/blog/promise/</loc>
+    <lastmod>2021-02-19T19:07:47+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://hkman2018.github.io/blog/teckycademy/</loc>
+    <lastmod>2021-02-19T15:07:47+08:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://hkman2018.github.io/tags/css/</loc>
     <lastmod>2021-02-19T15:07:47+08:00</lastmod>
   </url>
@@ -83,17 +103,42 @@
   </url>
   
   <url>
-    <loc>https://hkman2018.github.io/tags/tecky/</loc>
+    <loc>https://hkman2018.github.io/tags/notes/</loc>
     <lastmod>2021-02-19T15:07:47+08:00</lastmod>
   </url>
   
   <url>
-    <loc>https://hkman2018.github.io/categories/tecky/</loc>
+    <loc>https://hkman2018.github.io/categories/notes/</loc>
     <lastmod>2021-02-19T15:07:47+08:00</lastmod>
   </url>
   
   <url>
-    <loc>https://hkman2018.github.io/blog/teckycademy/</loc>
+    <loc>https://hkman2018.github.io/tags/socket-io/</loc>
+    <lastmod>2021-02-19T15:07:47+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://hkman2018.github.io/categories/socket-io/</loc>
+    <lastmod>2021-02-19T15:07:47+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://hkman2018.github.io/blog/socketio/</loc>
+    <lastmod>2021-02-19T15:07:47+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://hkman2018.github.io/tags/sql/</loc>
+    <lastmod>2021-02-19T15:07:47+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://hkman2018.github.io/categories/sql/</loc>
+    <lastmod>2021-02-19T15:07:47+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://hkman2018.github.io/blog/sql/</loc>
     <lastmod>2021-02-19T15:07:47+08:00</lastmod>
   </url>
   

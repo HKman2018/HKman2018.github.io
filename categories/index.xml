@@ -26,6 +26,15 @@
     </item>
     
     <item>
+      <title>Promise</title>
+      <link>https://hkman2018.github.io/categories/promise/</link>
+      <pubDate>Fri, 19 Feb 2021 19:07:47 +0800</pubDate>
+      
+      <guid>https://hkman2018.github.io/categories/promise/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>CSS</title>
       <link>https://hkman2018.github.io/categories/css/</link>
       <pubDate>Fri, 19 Feb 2021 15:07:47 +0800</pubDate>
@@ -44,11 +53,29 @@
     </item>
     
     <item>
-      <title>Tecky</title>
-      <link>https://hkman2018.github.io/categories/tecky/</link>
+      <title>notes</title>
+      <link>https://hkman2018.github.io/categories/notes/</link>
       <pubDate>Fri, 19 Feb 2021 15:07:47 +0800</pubDate>
       
-      <guid>https://hkman2018.github.io/categories/tecky/</guid>
+      <guid>https://hkman2018.github.io/categories/notes/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>socket io</title>
+      <link>https://hkman2018.github.io/categories/socket-io/</link>
+      <pubDate>Fri, 19 Feb 2021 15:07:47 +0800</pubDate>
+      
+      <guid>https://hkman2018.github.io/categories/socket-io/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>SQL</title>
+      <link>https://hkman2018.github.io/categories/sql/</link>
+      <pubDate>Fri, 19 Feb 2021 15:07:47 +0800</pubDate>
+      
+      <guid>https://hkman2018.github.io/categories/sql/</guid>
       <description></description>
     </item>
     

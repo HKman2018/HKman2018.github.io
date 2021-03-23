@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>SQL on Kin &#39;s blog</title>
+    <link>https://hkman2018.github.io/tags/sql/</link>
+    <description>Recent content in SQL on Kin &#39;s blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-TW</language>
+    <lastBuildDate>Fri, 19 Feb 2021 15:07:47 +0800</lastBuildDate><atom:link href="https://hkman2018.github.io/tags/sql/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>SQL</title>
+      <link>https://hkman2018.github.io/blog/sql/</link>
+      <pubDate>Fri, 19 Feb 2021 15:07:47 +0800</pubDate>
+      
+      <guid>https://hkman2018.github.io/blog/sql/</guid>
+      <description>SQL 基礎語法  psql -h localhost     權限 內容     SELECT 能使用SELECT命令來取得資料   INSERT 能使用INSERT命令來插入資料   UPDATE 能使用UPDATE命令來插入資料   DELETE 能使用DELETE命令來插入資料   EXECUTE 執行程序   REFERENCES 可以用外來鍵參考資料   ALL 所有權限    ###常用 SQL</description>
+    </item>
+    
+  </channel>
+</rss>
