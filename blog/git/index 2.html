@@ -5,7 +5,7 @@
 
   <!-- mobile responsive meta -->
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="SQL語法介紹">
+  <meta name="description" content="Git 語法介紹">
   <meta name="author" content="kin">
   <meta name="generator" content="Hugo 0.79.1" />
 
@@ -121,10 +121,10 @@
     <div class="row">
       <div class="col-lg-8 mx-auto">
         
-        <a href="/categories/sql"
-          class="text-primary">S q l</a>
+        <a href="/categories/git-%e8%aa%9e%e6%b3%95"
+          class="text-primary">Git 語法</a>
         
-        <h2>SQL</h2>
+        <h2>Git 語法</h2>
         <div class="mb-3 post-meta">
           <span>By kin</span>
           
@@ -133,67 +133,119 @@
           
         </div>
         
-        <img src="https://hkman2018.github.io/images/post/SQL.jpg" class="img-fluid w-100 mb-4" alt="SQL">
+        <img src="https://hkman2018.github.io/images/post/git.png" class="img-fluid w-100 mb-4" alt="Git 語法">
         
         <div class="content mb-5">
-          <h2 id="sql-基礎語法">SQL 基礎語法</h2>
-<p> </p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-typescript" data-lang="typescript"> <span style="color:#a6e22e">psql</span> <span style="color:#f92672">-</span><span style="color:#a6e22e">h</span> <span style="color:#a6e22e">localhost</span>
-</code></pre></div><p> </p>
-<table>
-<thead>
-<tr>
-<th>權限</th>
-<th style="text-align:left">內容</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>SELECT</td>
-<td style="text-align:left">能使用SELECT命令來取得資料</td>
-</tr>
-<tr>
-<td>INSERT</td>
-<td style="text-align:left">能使用INSERT命令來插入資料</td>
-</tr>
-<tr>
-<td>UPDATE</td>
-<td style="text-align:left">能使用UPDATE命令來插入資料</td>
-</tr>
-<tr>
-<td>DELETE</td>
-<td style="text-align:left">能使用DELETE命令來插入資料</td>
-</tr>
-<tr>
-<td>EXECUTE</td>
-<td style="text-align:left">執行程序</td>
-</tr>
-<tr>
-<td>REFERENCES</td>
-<td style="text-align:left">可以用外來鍵參考資料</td>
-</tr>
-<tr>
-<td>ALL</td>
-<td style="text-align:left">所有權限</td>
-</tr>
-</tbody>
-</table>
-<p>###常用 SQL</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-typescript" data-lang="typescript">  <span style="color:#a6e22e">app</span>.<span style="color:#66d9ef">get</span>(<span style="color:#e6db74">&#39;/&#39;</span>,(<span style="color:#a6e22e">req</span>,<span style="color:#a6e22e">res</span>)<span style="color:#f92672">=&gt;</span>{
-    <span style="color:#66d9ef">const</span> <span style="color:#a6e22e">content</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">client</span>.<span style="color:#a6e22e">query</span>(<span style="color:#e6db74">`SELECT * FROM memos order by updated_at desc`</span>) <span style="color:#75715e">//以updated時間排序
-</span><span style="color:#75715e"></span>  })
-</code></pre></div><div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-typescript" data-lang="typescript">  <span style="color:#a6e22e">app</span>.<span style="color:#a6e22e">post</span>(<span style="color:#e6db74">&#39;/&#39;</span>,(<span style="color:#a6e22e">req</span>,<span style="color:#a6e22e">res</span>)<span style="color:#f92672">=&gt;</span>{
-    <span style="color:#66d9ef">const</span> <span style="color:#a6e22e">content</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">client</span>.<span style="color:#a6e22e">query</span>(<span style="color:#e6db74">`INSERT INTO memos(content, image, created_at, updated_at)
-</span><span style="color:#e6db74">VALUES ($1, $2, NOW(), NOW()) RETURNING id`</span>) <span style="color:#75715e">//新增post之後return 返id
-</span><span style="color:#75715e"></span>  })
-</code></pre></div><div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-typescript" data-lang="typescript">  <span style="color:#a6e22e">app</span>.<span style="color:#a6e22e">put</span>(<span style="color:#e6db74">&#39;/:id&#39;</span>,(<span style="color:#a6e22e">req</span>,<span style="color:#a6e22e">res</span>)<span style="color:#f92672">=&gt;</span>{
-    <span style="color:#66d9ef">const</span> <span style="color:#a6e22e">content</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">client</span>.<span style="color:#a6e22e">query</span>(<span style="color:#e6db74">`UPDATE memos SET content=
-</span><span style="color:#e6db74">$1,image=$2 where id=$3;`</span>, [<span style="color:#a6e22e">req</span>.<span style="color:#a6e22e">body</span>.<span style="color:#a6e22e">textareaValue</span>, <span style="color:#a6e22e">req</span>.<span style="color:#a6e22e">file</span>.<span style="color:#a6e22e">filename</span>, <span style="color:#a6e22e">id</span>]) <span style="color:#75715e">//更新post
-</span><span style="color:#75715e"></span>  })
-</code></pre></div><div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-typescript" data-lang="typescript">  <span style="color:#a6e22e">app</span>.<span style="color:#66d9ef">delete</span>(<span style="color:#e6db74">&#39;/:id&#39;</span>,(<span style="color:#a6e22e">req</span>,<span style="color:#a6e22e">res</span>)<span style="color:#f92672">=&gt;</span>{
-    <span style="color:#66d9ef">const</span> <span style="color:#a6e22e">content</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">client</span>.<span style="color:#a6e22e">query</span>(<span style="color:#e6db74">`DELETE from memos where id = $1`</span>,[<span style="color:#a6e22e">id</span>]) <span style="color:#75715e">//更新post
-</span><span style="color:#75715e"></span>  })
-</code></pre></div>
+          <h1 id="git-語法">GIT 語法</h1>
+<h3 id="本地端">本地端</h3>
+<ul>
+<li><strong>在本地端資料夾新增數據庫</strong></li>
+</ul>
+<pre><code>          git init
+</code></pre><ul>
+<li><strong>從遠端數據庫複製 <code>git clone[url]</code></strong></li>
+</ul>
+<pre><code>          git clone https://github.com/username/Personal-website.git
+</code></pre><ul>
+<li><strong>查詢設定列表</strong></li>
+</ul>
+<pre><code>          git config --list
+</code></pre><ul>
+<li><strong>加檔案進入commit</strong></li>
+</ul>
+<pre><code>          git add *filename*
+</code></pre><ul>
+<li><strong>加全部檔案進入commit</strong></li>
+</ul>
+<pre><code>          git add .
+</code></pre><ul>
+<li><strong>查詢commit內file</strong></li>
+</ul>
+<pre><code>          git status
+</code></pre><ul>
+<li><strong>顯示之前紀錄</strong></li>
+</ul>
+<pre><code>          git log
+</code></pre><ul>
+<li><strong>記錄commit</strong></li>
+</ul>
+<pre><code>          git commit -m '訊息'
+</code></pre><h3 id="還原指令">還原指令</h3>
+<ul>
+<li><strong>還原工作目錄與索引，會跟最後一次 commit 保持一樣</strong></li>
+</ul>
+<pre><code>          git reset --hard 
+</code></pre><ul>
+<li><strong>全部檔案取消索引</strong></li>
+</ul>
+<pre><code>          git reset HEAD 
+</code></pre><ul>
+<li><strong>單一檔案取消索引</strong></li>
+</ul>
+<pre><code>          git reset HEAD *filename*
+</code></pre><ul>
+<li><strong>恢復單一檔案到最新 commit 狀態</strong></li>
+</ul>
+<pre><code>          git checkout *filename*
+</code></pre><ul>
+<li><strong>刪除最近一次 commit</strong></li>
+</ul>
+<pre><code>          git reset --hard HEAD^ 
+</code></pre><ul>
+<li><strong>上面語法如果刪除錯了可以再用此語法還原</strong></li>
+</ul>
+<pre><code>          git reset --hard ORIG_HEAD  
+</code></pre><ul>
+<li><strong>刪除最近一次 commit，但保留異動內容</strong></li>
+</ul>
+<pre><code>          git reset --soft HEAD^
+</code></pre><ul>
+<li><strong>commit 後發現有幾個檔案忘了加入進去，想要補內容進去時</strong></li>
+</ul>
+<pre><code>          git commit --amend 
+</code></pre><h3 id="分支">分支</h3>
+<ul>
+<li><strong>顯示所有本地分支</strong></li>
+</ul>
+<pre><code>          git branch 
+</code></pre><ul>
+<li><strong>新增分支</strong></li>
+</ul>
+<pre><code>          git branch 分支名稱
+</code></pre><ul>
+<li><strong>切換分支</strong></li>
+</ul>
+<pre><code>          git checkout 分支名稱
+</code></pre><ul>
+<li><strong>合併指定分支到目前的分支</strong></li>
+</ul>
+<pre><code>          git merge 分支名稱
+</code></pre><ul>
+<li><strong>刪除分支</strong></li>
+</ul>
+<pre><code>          git branch -d 分支名稱
+</code></pre><h3 id="遠端數據庫指令">遠端數據庫指令</h3>
+<ul>
+<li><strong>查詢遠端數據庫</strong></li>
+</ul>
+<pre><code>          git remote
+</code></pre><ul>
+<li><strong>將本地分支推送到遠端分支</strong></li>
+</ul>
+<pre><code>          git push 遠端數據庫名稱 遠端分支名稱
+</code></pre><ul>
+<li><strong>將遠端分支拉下來與本地分支進行合併</strong></li>
+</ul>
+<pre><code>          git pull
+</code></pre><ul>
+<li><strong>查詢遠端分支url</strong></li>
+</ul>
+<pre><code>          git remote -v
+</code></pre><ul>
+<li><strong>更改遠端分支url</strong></li>
+</ul>
+<pre><code>          git remote set-url origin https://github.com/username.git
+</code></pre>
         </div>
 
         

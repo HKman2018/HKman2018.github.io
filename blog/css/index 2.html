@@ -5,7 +5,7 @@
 
   <!-- mobile responsive meta -->
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="SQL語法介紹">
+  <meta name="description" content="CSS">
   <meta name="author" content="kin">
   <meta name="generator" content="Hugo 0.79.1" />
 
@@ -121,10 +121,10 @@
     <div class="row">
       <div class="col-lg-8 mx-auto">
         
-        <a href="/categories/sql"
-          class="text-primary">S q l</a>
+        <a href="/categories/css"
+          class="text-primary">C s s</a>
         
-        <h2>SQL</h2>
+        <h2>CSS</h2>
         <div class="mb-3 post-meta">
           <span>By kin</span>
           
@@ -133,67 +133,53 @@
           
         </div>
         
-        <img src="https://hkman2018.github.io/images/post/SQL.jpg" class="img-fluid w-100 mb-4" alt="SQL">
+        <img src="https://hkman2018.github.io/images/post/css.png" class="img-fluid w-100 mb-4" alt="CSS">
         
         <div class="content mb-5">
-          <h2 id="sql-基礎語法">SQL 基礎語法</h2>
-<p> </p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-typescript" data-lang="typescript"> <span style="color:#a6e22e">psql</span> <span style="color:#f92672">-</span><span style="color:#a6e22e">h</span> <span style="color:#a6e22e">localhost</span>
-</code></pre></div><p> </p>
-<table>
-<thead>
-<tr>
-<th>權限</th>
-<th style="text-align:left">內容</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>SELECT</td>
-<td style="text-align:left">能使用SELECT命令來取得資料</td>
-</tr>
-<tr>
-<td>INSERT</td>
-<td style="text-align:left">能使用INSERT命令來插入資料</td>
-</tr>
-<tr>
-<td>UPDATE</td>
-<td style="text-align:left">能使用UPDATE命令來插入資料</td>
-</tr>
-<tr>
-<td>DELETE</td>
-<td style="text-align:left">能使用DELETE命令來插入資料</td>
-</tr>
-<tr>
-<td>EXECUTE</td>
-<td style="text-align:left">執行程序</td>
-</tr>
-<tr>
-<td>REFERENCES</td>
-<td style="text-align:left">可以用外來鍵參考資料</td>
-</tr>
-<tr>
-<td>ALL</td>
-<td style="text-align:left">所有權限</td>
-</tr>
-</tbody>
-</table>
-<p>###常用 SQL</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-typescript" data-lang="typescript">  <span style="color:#a6e22e">app</span>.<span style="color:#66d9ef">get</span>(<span style="color:#e6db74">&#39;/&#39;</span>,(<span style="color:#a6e22e">req</span>,<span style="color:#a6e22e">res</span>)<span style="color:#f92672">=&gt;</span>{
-    <span style="color:#66d9ef">const</span> <span style="color:#a6e22e">content</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">client</span>.<span style="color:#a6e22e">query</span>(<span style="color:#e6db74">`SELECT * FROM memos order by updated_at desc`</span>) <span style="color:#75715e">//以updated時間排序
-</span><span style="color:#75715e"></span>  })
-</code></pre></div><div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-typescript" data-lang="typescript">  <span style="color:#a6e22e">app</span>.<span style="color:#a6e22e">post</span>(<span style="color:#e6db74">&#39;/&#39;</span>,(<span style="color:#a6e22e">req</span>,<span style="color:#a6e22e">res</span>)<span style="color:#f92672">=&gt;</span>{
-    <span style="color:#66d9ef">const</span> <span style="color:#a6e22e">content</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">client</span>.<span style="color:#a6e22e">query</span>(<span style="color:#e6db74">`INSERT INTO memos(content, image, created_at, updated_at)
-</span><span style="color:#e6db74">VALUES ($1, $2, NOW(), NOW()) RETURNING id`</span>) <span style="color:#75715e">//新增post之後return 返id
-</span><span style="color:#75715e"></span>  })
-</code></pre></div><div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-typescript" data-lang="typescript">  <span style="color:#a6e22e">app</span>.<span style="color:#a6e22e">put</span>(<span style="color:#e6db74">&#39;/:id&#39;</span>,(<span style="color:#a6e22e">req</span>,<span style="color:#a6e22e">res</span>)<span style="color:#f92672">=&gt;</span>{
-    <span style="color:#66d9ef">const</span> <span style="color:#a6e22e">content</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">client</span>.<span style="color:#a6e22e">query</span>(<span style="color:#e6db74">`UPDATE memos SET content=
-</span><span style="color:#e6db74">$1,image=$2 where id=$3;`</span>, [<span style="color:#a6e22e">req</span>.<span style="color:#a6e22e">body</span>.<span style="color:#a6e22e">textareaValue</span>, <span style="color:#a6e22e">req</span>.<span style="color:#a6e22e">file</span>.<span style="color:#a6e22e">filename</span>, <span style="color:#a6e22e">id</span>]) <span style="color:#75715e">//更新post
-</span><span style="color:#75715e"></span>  })
-</code></pre></div><div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-typescript" data-lang="typescript">  <span style="color:#a6e22e">app</span>.<span style="color:#66d9ef">delete</span>(<span style="color:#e6db74">&#39;/:id&#39;</span>,(<span style="color:#a6e22e">req</span>,<span style="color:#a6e22e">res</span>)<span style="color:#f92672">=&gt;</span>{
-    <span style="color:#66d9ef">const</span> <span style="color:#a6e22e">content</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">client</span>.<span style="color:#a6e22e">query</span>(<span style="color:#e6db74">`DELETE from memos where id = $1`</span>,[<span style="color:#a6e22e">id</span>]) <span style="color:#75715e">//更新post
-</span><span style="color:#75715e"></span>  })
-</code></pre></div>
+          <h2 id="box-sizing">box-sizing</h2>
+<pre><code>  &lt;div class=&quot;container&quot;&gt;
+      &lt;div class=&quot;box&quot;&gt;&lt;/div&gt;
+  &lt;/div&gt;
+  &lt;style&gt;
+   .container{ 
+     box-sizing:content-box;
+     width:100%;
+   }
+  &lt;/style&gt;
+</code></pre><p><img src="../../images/post/box.png" alt="box"></p>
+<pre><code>  &lt;div class=&quot;container&quot;&gt;
+      &lt;div class=&quot;box&quot;&gt;&lt;/div&gt;
+  &lt;/div&gt;
+  &lt;style&gt;
+   .container{ 
+     box-sizing:content-box;
+     width:100%;
+     border: solid #5B6DCD 10px;
+     padding: 5px     
+   }
+  &lt;/style&gt;
+</code></pre><p><img src="../../images/post/content-box.png" alt="box-content"></p>
+<pre><code>  &lt;div class=&quot;container&quot;&gt;
+      &lt;div class=&quot;box&quot;&gt;&lt;/div&gt;
+  &lt;/div&gt;
+  &lt;style&gt;
+    .container{ 
+     box-sizing: border-box;
+     width: 100%;
+     border: solid #5B6DCD 10px;
+     padding: 5px;    
+   }
+  &lt;/style&gt;
+</code></pre><p><img src="../../images/post/border-box.png" alt="box-content"></p>
+<pre><code>@font-face {
+  font-family: myFirstFont;
+  src: url(sansation_light.woff);
+}
+
+div {
+  font-family: myFirstFont;
+}
+</code></pre>
         </div>
 
         
